@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fb-app-a478d": {
+      "hosting": {
+        "facebook": [
+          "fb-app-a478d"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "fb-app": "fb-app-a478d"
+  }
+}

@@ -1,0 +1,35 @@
+<div class="login-container">
+  <header class="login__header">
+
+    <div class="login__header__left">
+      <img src="assets/fb-logo-1.jpg" alt="">
+      <h2>Facebookを使うと、友達や同僚、同級生、仲間たちとつながりを深められます。ケータイ、スマートフォンからもアクセスできます。</h2>
+    </div>
+
+    <div class="login__header__right">
+      <mat-card class="login__header__right__card">
+        <mat-card-content class="login__header__right__card__content">
+
+          <form #form="ngForm" class="login-form" (ngSubmit)="login(form)">
+            <input type="text" name="email" ngModel placeholder="メールアドレスまたは電話番号:" required>
+            <input type="password" name="password" ngModel placeholder="パスワード" required>
+            <button type="submit"
+                    class="login-button"
+                    [disabled]="form.invalid || form.pending"
+            >ログイン</button>
+          </form>
+
+          <a href="#">パスワードを忘れた場合</a>
+          <button class="create-account" (click)="openRegister()">新しいアカウントを作成</button>
+
+        </mat-card-content>
+      </mat-card>
+
+      <p class="tagline">有名人、バンド、ビジネスのために<strong>Facebookページを作成</strong></p>
+
+    </div>
+  </header>
+  <footer class="login__footer">
+    <img src="assets/footer_crop.jpg" alt="">
+  </footer>
+</div>

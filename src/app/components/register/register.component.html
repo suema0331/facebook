@@ -1,0 +1,26 @@
+<section class="register">
+  <div class="header">
+    <h3>アカウント登録</h3>
+    <p>簡単に登録できます。</p>
+  </div>
+
+  <div class="body">
+    <form #form="ngForm" >
+      <div class="user_name">
+        <input type="text" placeholder="姓" name="lname" ngModel>
+        <input type="text" placeholder="名" name="fname" ngModel>
+      </div>
+
+      <div class="email_password">
+        <input type="text" placeholder="携帯電話番号またはメールアドレス" name="email" ngModel>
+        <input type="text" placeholder="Image Url" name="avatar" ngModel>
+        <input type="password" placeholder="パスワード" name="password" ngModel>
+      </div>
+
+      <p>[アカウント登録]をクリックすることで、利用規約、データに関するポリシー 、Cookieポリシーに同意するものとします。サービスに関連してFacebookからSMS通知が届くことがありますが、これはいつでもオフに設定できます。</p>
+
+       <buttom type="submit" class="submit-button" [mat-dialog-close]="form.value">アカウント登録</buttom>
+    </form>
+
+  </div>
+</section>
